@@ -1,8 +1,8 @@
-export const Teacher = () => {
+export const Teacher = ({name}) => {
 
     return (
         <div className="card">
-            <h2>Teacher Januar</h2>
+            <h2>Teacher {name}</h2>
             <div>
                 <button type='button'>Join ReactJS</button>
                 &nbsp;

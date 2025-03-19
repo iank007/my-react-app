@@ -1,9 +1,8 @@
-function Student() {
-
+function Student({name, noSeat}) {
     return (
         <div className="card">
-            <h3>Student A</h3>
-            <p>no Seat: 1</p>
+            <h3>Student {name}</h3>
+            <p>no Seat: {noSeat}</p>
             <div>
                 <button type='button'>Join ReactJS</button>
                 &nbsp;
