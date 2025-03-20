@@ -1,13 +1,10 @@
-function Student({name, noSeat}) {
+function Student({ name, index, action }) {
+
     return (
         <div className="card">
             <h3>Student {name}</h3>
-            <p>no Seat: {noSeat}</p>
-            <div>
-                <button type='button'>Join ReactJS</button>
-                &nbsp;
-                <button type='button'>Join Tahfidz</button>
-            </div>
+            <p>no Seat: {index}</p>
+            {action(name)}
         </div>
     )
 }
